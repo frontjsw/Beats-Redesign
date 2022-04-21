@@ -1,0 +1,241 @@
+.main {
+  padding-top: 80px;
+}
+.main_vis {
+  width: 100%;
+  max-height: calc(100vh - 80px);
+  overflow: hidden;
+}
+.main_vis video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.content {
+  width: 100%;
+  max-height: calc(100vh - 80px);
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+.content .left_area {
+  width: 50%;
+  z-index: 9;
+  float: left;
+}
+.content .right_area {
+  width: 50%;
+  float: left;
+}
+.content .right_area .swiper {
+  height: 100%;
+  width: 60%;
+  margin-left: 0;
+  overflow: visible;
+  z-index: 0;
+}
+.content .right_area .swiper .swiper-pagination {
+  bottom: 0;
+  left: 10%;
+}
+.content .right_area .swiper .swiper-pagination-bullet {
+  width: 33.33%;
+  height: 3px;
+  border-radius: 0;
+  margin: 0;
+}
+.content .right_area .swiper .swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+.content .right_area ul li {
+  padding: 10%;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.content .right_area ul li .tit_wrap {
+  margin-bottom: 20px;
+}
+.content .right_area ul li .img_wrap {
+  overflow: hidden;
+}
+.content .right_area ul li .img_wrap img {
+  transition: 0.3s;
+}
+.content .right_area ul li .img_wrap:hover img {
+  transform: scale(1.1);
+}
+.content .right_area ul li .txt_wrap {
+  padding: 10px 0;
+}
+.content .right_area ul li .txt_wrap em {
+  line-height: 40px;
+}
+.content .right_area ul li .txt_wrap p {
+  color: #ccc;
+}
+.event {
+  padding: 70px 20px;
+}
+.event .event_title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.event .main_event {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.event .main_event .img_wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.event .main_event .img_wrap .event_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  transition: ease-in-out 1.2s;
+}
+.event .main_event .img_wrap .right_back {
+  right: 0;
+  left: auto;
+}
+.event .sub_event {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.event .sub_event li {
+  width: calc((100% - 40px) / 3);
+  overflow: hidden;
+}
+.event .sub_event li img {
+  transition: 0.3s;
+}
+.event .sub_event li:hover img {
+  transform: scale(1.1);
+}
+.event .more {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 1.8rem;
+}
+
+.product {
+  background-color: #f0f0f0;
+  padding: 100px 0;
+  margin-bottom: 50px;
+}
+.product .tit_wrap {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.product ul {
+  display: flex;
+}
+.product ul li {
+  width: 25%;
+  height: 400px;
+  background: url(../images/product1.png) no-repeat center / cover;
+  position: relative;
+  overflow: hidden;
+  background-position-x: 100px;
+  transition: 0.3s;
+}
+.product ul li:not(:first-child) {
+  border-left: 1px solid #e1e1e1;
+}
+.product ul li:nth-child(2) {
+  background-image: url(../images/product2.png);
+}
+.product ul li:nth-child(3) {
+  background-image: url(../images/product3.png);
+}
+.product ul li:nth-child(4) {
+  background-image: url(../images/product4.png);
+}
+.product ul li:hover {
+  background-position: center;
+}
+.product ul li .txt_wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 20px;
+  transition: padding 0.3s;
+}
+.product ul li:hover .txt_wrap {
+  background-color: #fff;
+  padding: 20px 20px 20px 30px;
+}
+
+.banner {
+  height: 100px;
+  position: relative;
+  background-color: #f0f0f0;
+}
+.banner .banner_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  display: flex;
+  align-items: center;
+}
+.banner .banner_wrap img {
+  width: 140px;
+  height: 30px;
+  margin-right: 20px;
+}
+.banner .banner_wrap em {
+  display: block;
+  font-size: 2rem;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 20px;
+}
+.banner .banner_wrap a {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.help {
+  padding: 50px 100px;
+}
+.help .left_area {
+  float: left;
+}
+.help .left_area em {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.help .right_area {
+  float: right;
+}
+.help .right_area ul {
+}
+.help .right_area ul li {
+  float: left;
+}
+.help .right_area ul li:not(:first-child) {
+  margin-left: 70px;
+}
+.help .right_area ul li .img_wrap {
+  margin: 0 auto 15px auto;
+  width: 50px;
+}
+.help .right_area ul li .txt_wrap {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
