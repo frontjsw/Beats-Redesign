@@ -1,4 +1,19 @@
 window.onload = function () {
+  const videoPlay = document.querySelectorAll(".play");
+  const videoClose = document.querySelectorAll(".close");
+
+  for (const play of videoPlay) {
+    play.addEventListener("click", (e) => {
+      e.target.parentNode.classList.add("on");
+    });
+  }
+
+  for (const close of videoClose) {
+    close.addEventListener("click", (e) => {
+      e.target.parentNode.classList.remove("on");
+    });
+  }
+
   const gnb = document.querySelector(".gnb");
   const gnbWrap = document.querySelector(".gnb_wrap");
 
@@ -26,13 +41,16 @@ window.onload = function () {
   const eventTop = document.querySelector(".event").offsetTop - 600;
   window.addEventListener("scroll", () => {
     let winY = window.scrollY;
+    let winYY = document.querySelector(".event").getBoundingClientRect();
     if (winY > eventTop) {
       document.querySelector(".left_back").style.width = "0%";
       document.querySelector(".right_back").style.width = "0%";
-    } else if (winY < eventTop - 600) {
-      document.querySelector(".left_back").style.width = "50%";
-      document.querySelector(".right_back").style.width = "50%";
     }
+    //  else if (winY < eventTop - 600) {
+    //   document.querySelector(".left_back").style.width = "50%";
+    //   document.querySelector(".right_back").style.width = "50%";
+    // }
+    console.log(winYY);
   });
 
   var mainCon = new Swiper(".mainCon ", {

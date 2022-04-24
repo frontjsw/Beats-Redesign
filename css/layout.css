@@ -16,8 +16,8 @@ header .header_wrap .main_logo {
   top: 25px;
   left: 40px;
   background: url(../images/logo.png) no-repeat center / cover;
-  width: 14rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   z-index: 10;
 }
 header .header_wrap .gnb {

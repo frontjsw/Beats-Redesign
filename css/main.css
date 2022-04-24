@@ -50,7 +50,7 @@
 
 .content .right_area ul li {
   padding: 10%;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 .content .right_area ul li .tit_wrap {
@@ -66,6 +66,7 @@
   transform: scale(1.1);
 }
 .content .right_area ul li .txt_wrap {
+  font-size: 2rem;
   padding: 10px 0;
 }
 .content .right_area ul li .txt_wrap em {
@@ -73,58 +74,6 @@
 }
 .content .right_area ul li .txt_wrap p {
   color: #ccc;
-}
-.event {
-  padding: 70px 20px;
-}
-.event .event_title {
-  text-align: center;
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-.event .main_event {
-  width: 100%;
-  margin-bottom: 20px;
-  position: relative;
-}
-.event .main_event .img_wrap {
-  width: 100%;
-  overflow: hidden;
-}
-.event .main_event .img_wrap .event_back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #fff;
-  transition: ease-in-out 1.2s;
-}
-.event .main_event .img_wrap .right_back {
-  right: 0;
-  left: auto;
-}
-.event .sub_event {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.event .sub_event li {
-  width: calc((100% - 40px) / 3);
-  overflow: hidden;
-}
-.event .sub_event li img {
-  transition: 0.3s;
-}
-.event .sub_event li:hover img {
-  transform: scale(1.1);
-}
-.event .more {
-  text-align: center;
-  font-weight: 600;
-  margin-top: 30px;
-  font-size: 1.8rem;
 }
 
 .product {
@@ -178,6 +127,135 @@
 .product ul li:hover .txt_wrap {
   background-color: #fff;
   padding: 20px 20px 20px 30px;
+}
+.event {
+  margin: 100px 0;
+  padding: 0 20px;
+  position: relative;
+}
+.event .event_title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.event .main_event {
+  width: 100%;
+  height: 500px;
+  background: url(../images/event_back.jpg) no-repeat center / cover;
+  margin-bottom: 20px;
+  position: relative;
+}
+.event .main_event .img_wrap .event_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  transition: ease-in-out 1.2s;
+}
+.event .main_event .img_wrap .right_back {
+  right: 0;
+  left: auto;
+}
+.event .txt_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  font-weight: 700;
+  line-height: 5rem;
+}
+.event .txt_wrap span {
+  color: red;
+  font-size: 2.5rem;
+}
+.event .txt_wrap h2 {
+  font-size: 5rem;
+}
+.event .txt_wrap em {
+  font-size: 3rem;
+}
+.event .txt_wrap p {
+  font-size: 2rem;
+}
+.event .txt_wrap button {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 1.8rem;
+}
+.event .sub_event {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.event .sub_event li {
+  width: calc((100% - 40px) / 3);
+  overflow: hidden;
+  position: relative;
+}
+.event .sub_event li img {
+  transition: 0.3s;
+}
+.event .sub_event li:hover img {
+  transform: scale(1.1);
+}
+.event .sub_event li .video_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 21;
+  display: none;
+}
+.event .sub_event li.on .video_wrap {
+  display: block;
+}
+.event .sub_event li .video_wrap .video_pop {
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+}
+.event .sub_event li .video_wrap video {
+  width: 100%;
+  height: 100%;
+}
+.event .sub_event li .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 73px;
+  height: 73px;
+  background: url(../images/play.png) no-repeat center / cover;
+  cursor: pointer;
+}
+.event .sub_event li .close {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  font-size: 3rem;
+  z-index: 22;
+  display: none;
+}
+.event .sub_event li.on .close {
+  display: block;
+}
+.event .more {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 1.8rem;
 }
 
 .banner {
