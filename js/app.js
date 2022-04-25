@@ -41,16 +41,13 @@ window.onload = function () {
   const eventTop = document.querySelector(".event").offsetTop - 600;
   window.addEventListener("scroll", () => {
     let winY = window.scrollY;
-    let winYY = document.querySelector(".event").getBoundingClientRect();
     if (winY > eventTop) {
       document.querySelector(".left_back").style.width = "0%";
       document.querySelector(".right_back").style.width = "0%";
+    } else if (winY < eventTop - 600) {
+      document.querySelector(".left_back").style.width = "50%";
+      document.querySelector(".right_back").style.width = "50%";
     }
-    //  else if (winY < eventTop - 600) {
-    //   document.querySelector(".left_back").style.width = "50%";
-    //   document.querySelector(".right_back").style.width = "50%";
-    // }
-    console.log(winYY);
   });
 
   var mainCon = new Swiper(".mainCon ", {
