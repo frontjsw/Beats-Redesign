@@ -20,6 +20,10 @@ header .header_wrap .main_logo {
   height: 4rem;
   z-index: 10;
 }
+header .header_wrap .main_logo a {
+  width: 100%;
+  height: 100%;
+}
 header .header_wrap .gnb {
   width: 100%;
   background-color: #fff;
@@ -131,13 +135,14 @@ footer {
 }
 .footer_wrap .right_wrap {
   width: 48%;
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 .footer_wrap .right_wrap .foot_sns {
   display: flex;
   margin-bottom: 20px;
 }
 .footer_wrap .right_wrap .foot_sns .txt_wrap {
-  font-size: 2rem;
   font-weight: 700;
   width: 30%;
 }
@@ -149,8 +154,6 @@ footer {
 }
 .footer_wrap .right_wrap .foot_sns .sns_wrap ul li {
   width: 20%;
-}
-.footer_wrap .right_wrap .foot_sns .sns_wrap ul li img {
 }
 .footer_wrap .right_wrap .foot_tab {
 }
