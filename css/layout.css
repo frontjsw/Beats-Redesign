@@ -3,7 +3,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 8rem;
   z-index: 10;
   background-color: #fff;
 }
@@ -13,8 +13,8 @@ header .header_wrap {
 }
 header .header_wrap .main_logo {
   position: absolute;
-  top: 25px;
-  left: 40px;
+  top: 2.5rem;
+  left: 4rem;
   background: url(../images/logo.png) no-repeat center / cover;
   width: 4rem;
   height: 4rem;
@@ -33,14 +33,14 @@ header .header_wrap .gnb {
 header .header_wrap .gnb.on::after {
   content: "";
   position: absolute;
-  top: 80px;
+  top: 8rem;
   left: 0;
   width: 100%;
   height: 0.2px;
   background-color: #ccc;
 }
 header .header_wrap .gnb_wrap {
-  width: 1000px;
+  width: 100rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -51,8 +51,8 @@ header .header_wrap .gnb_wrap > li {
 }
 
 header .header_wrap .gnb_wrap > li > a {
-  margin: 20px 0;
-  line-height: 40px;
+  margin: 2rem 0;
+  line-height: 4rem;
   transition: color 0.3s;
 }
 
@@ -64,35 +64,35 @@ header .header_wrap .gnb_wrap .sub_gnb {
   transition: 0.3s;
 }
 header .header_wrap .gnb_wrap > li:hover > .sub_gnb {
-  border-top: 3px solid #5765f4;
+  border-top: 0.3rem solid #5765f4;
 }
 header .header_wrap .gnb_wrap .sub_gnb li a {
   color: #ccc;
   transition: color 0.3s;
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 header .header_wrap .gnb_wrap .sub_gnb li a:hover {
   color: #5765f4;
 }
 header .header_wrap .utile_gnb {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 3rem;
+  right: 4rem;
   display: flex;
 }
 header .header_wrap .utile_gnb li {
 }
 header .header_wrap .utile_gnb li:not(:first-child) {
-  margin-left: 30px;
+  margin-left: 3rem;
 }
 footer {
   width: 100%;
-  height: 300px;
+  height: 30rem;
   background-color: #000;
   color: #bbbbbb;
   padding: 5%;
   font-size: 1.5rem;
-  line-height: 20px;
+  line-height: 2rem;
 }
 .footer_wrap {
   display: flex;
@@ -104,22 +104,22 @@ footer {
 .footer_wrap .left_wrap .foot_link {
 }
 .footer_wrap .left_wrap .foot_link .link_wrap {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .footer_wrap .left_wrap .foot_link .link_wrap ul {
   display: flex;
 }
 .footer_wrap .left_wrap .foot_link .link_wrap ul li {
-  margin-right: 30px;
+  margin-right: 3rem;
   position: relative;
 }
 .footer_wrap .left_wrap .foot_link .link_wrap ul li:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 2.5px;
-  right: -15px;
-  width: 1px;
-  height: 15px;
+  top: 0.25rem;
+  right: -1.5rem;
+  width: 0.1rem;
+  height: 1.5rem;
   background-color: #bbbbbb;
 }
 .footer_wrap .left_wrap .foot_link .link_wrap ul li a {
@@ -140,7 +140,7 @@ footer {
 }
 .footer_wrap .right_wrap .foot_sns {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .footer_wrap .right_wrap .foot_sns .txt_wrap {
   font-weight: 700;
@@ -163,7 +163,7 @@ footer {
 }
 .footer_wrap .right_wrap .foot_tab > ul > li {
   background-color: red;
-  height: 50px;
+  height: 5rem;
   width: 45%;
 }
 .footer_wrap .right_wrap .foot_tab > ul > li > ul {
