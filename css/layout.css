@@ -13,7 +13,7 @@ header .header_wrap {
 }
 header .header_wrap .main_logo {
   position: absolute;
-  top: 2.5rem;
+  top: 2rem;
   left: 4rem;
   background: url(../images/logo.png) no-repeat center / cover;
   width: 4rem;
@@ -76,14 +76,22 @@ header .header_wrap .gnb_wrap .sub_gnb li a:hover {
 }
 header .header_wrap .utile_gnb {
   position: absolute;
-  top: 3rem;
+  top: 2rem;
   right: 4rem;
   display: flex;
+  line-height: 4rem;
 }
 header .header_wrap .utile_gnb li {
 }
 header .header_wrap .utile_gnb li:not(:first-child) {
   margin-left: 3rem;
+}
+header .header_wrap .mobile_gnb {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  line-height: 4rem;
+  display: none;
 }
 footer {
   width: 100%;
@@ -183,12 +191,20 @@ footer {
   html {
     font-size: 7px;
   }
-  header .header_wrap .gnb_wrap {
-    display: none;
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 6px;
   }
 }
 @media screen and (max-width: 700px) {
-  html {
-    font-size: 6px;
+  header .header_wrap .gnb {
+    display: none;
+  }
+  header .header_wrap .utile_gnb {
+    display: none;
+  }
+  header .header_wrap .mobile_gnb {
+    display: block;
   }
 }
